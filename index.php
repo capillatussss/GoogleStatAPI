@@ -24,7 +24,7 @@ preg_match_all("/<noscript><meta content=\"0;url=(.*)http-equiv=\"refresh\">/", 
 //Extract the url of the meta tag
 $url = $output_array[1][0];
 $url = str_replace('" ','',$url);
-$url = "https://www.google.de/".$url;
+$url = "https://www.google.com/".$url;
 $url = html_entity_decode($url);
 //Query data from google page (with no JS, raw HTML)
 $ch = curl_init();
