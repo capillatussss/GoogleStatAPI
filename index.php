@@ -9,7 +9,7 @@ $query = $_GET['s'];
 //Prepare search pattern for google
 $query = str_replace(" ","+",$query);
 //Generate query url for google
-$url = 'https://www.google.de/search?q="'.$query.'"';
+$url = 'https://www.google.com/search?q="'.$query.'"';
 //Query data from google
 $ch = curl_init();
 //Set generated url
